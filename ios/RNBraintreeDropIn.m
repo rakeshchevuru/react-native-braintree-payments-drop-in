@@ -54,6 +54,8 @@ RCT_REMAP_METHOD(show,
             }
         }];
 
+    [BTUIKAppearance sharedInstance].postalCodeFormFieldKeyboardType = UIKeyboardTypeDefault;
+
     if (dropIn != nil) {
         [self.reactRoot presentViewController:dropIn animated:YES completion:nil];
     } else {
